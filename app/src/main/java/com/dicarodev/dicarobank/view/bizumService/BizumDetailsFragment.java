@@ -74,15 +74,17 @@ public class BizumDetailsFragment extends Fragment {
 
     private void setDetails() {
         tvDetailAmount.setText(getString(R.string.bizumDetails_amount, String.valueOf(bizum.getAmount())));
-        tvDetailMessage.setText(getString(R.string.bizumDetails_message, bizum.getMessage()));
-        tvDetailContact.setText(bizum.getContact().getName());
+        tvDetailMessage.setText(bizum.getMessage().isEmpty()
+                ? getString(R.string.bizumDetails_noMessage)
+                : getString(R.string.bizumDetails_message, bizum.getMessage()));
+        tvDetailContact.setText(getString(R.string.bizumDetails_contact, bizum.getContact().getName()));
     }
 
     private void issueBizum(String token) {
 
         if (bizum != null) {
             double amount = bizum.getAmount();
-            String detail = bizum.getMessage().isEmpty() ? "Bizum" : "Bizum: " + bizum.getMessage();
+            String detail = bizum.getMessage().isEmpty() ? "Bizum" : "Bizum - " + bizum.getMessage();
             BizumDto bizumDto = new BizumDto(amount, detail);
             issueBizumRequest(token, bizumDto);
         }

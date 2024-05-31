@@ -11,7 +11,6 @@
         android:id="@+id/logoTransDetails_img"
         android:layout_width="116dp"
         android:layout_height="123dp"
-        android:layout_marginTop="32dp"
         android:contentDescription="@string/logo_dicaro_bank"
         android:src="@drawable/logo_dicaro_bank"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,67 +19,83 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/bizumInfo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_200"
+        android:padding="15dp"
+        android:text="@string/transactionDetail_info_tv"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoTransDetails_img" />
+
+    <TextView
         android:id="@+id/transDetailsDate_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:text="@string/transactionDetail_date"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoTransDetails_img" />
+        app:layout_constraintTop_toBottomOf="@+id/bizumInfo_tv" />
 
     <TextView
         android:id="@+id/transDetailsDetail_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="@string/transactionDetail_detail"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transDetailsDate_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/transDetailsDate_tv"
         app:layout_constraintTop_toBottomOf="@+id/transDetailsDate_tv" />
 
     <TextView
         android:id="@+id/transDetailsAmount_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:text="@string/transactionDetail_amount"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transDetailsDetail_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/transDetailsDetail_tv"
         app:layout_constraintTop_toBottomOf="@+id/transDetailsDetail_tv" />
 
     <TextView
         android:id="@+id/originAccount_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:text="@string/transactionDetail_originAccount"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transDetailsAmount_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/transDetailsAmount_tv"
         app:layout_constraintTop_toBottomOf="@+id/transDetailsAmount_tv" />
 
     <TextView
         android:id="@+id/destinyAccount_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="@string/transactionDetail_destinyAccount"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/originAccount_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/originAccount_tv"
         app:layout_constraintTop_toBottomOf="@+id/originAccount_tv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

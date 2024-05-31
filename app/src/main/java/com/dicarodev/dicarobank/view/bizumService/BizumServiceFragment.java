@@ -63,11 +63,17 @@ public class BizumServiceFragment extends Fragment {
         String bizumAmount = etBizumAmount.getText().toString().trim();
         String bizumMessage = etBizumMessage.getText().toString().trim();
 
+        double amount = !bizumAmount.isEmpty() ? Double.parseDouble(bizumAmount) : 0;
+
         if (bizumAmount.isEmpty()) {
             etBizumAmount.setError(getString(R.string.required_field));
             etBizumAmount.requestFocus();
+        } else if (amount < 0.5 || amount > 300) {
+            etBizumAmount.setError(getString(R.string.bizumService_incorrect_amount));
+            etBizumAmount.setText("");
+            etBizumAmount.requestFocus();
         } else {
-            Bizum bizum = new Bizum(Double.parseDouble(bizumAmount), bizumMessage, null);
+            Bizum bizum = new Bizum(amount, bizumMessage, null);
             Bundle bundleContacts = new Bundle();
             bundleContacts.putSerializable("bizum", bizum);
             navController.navigate(R.id.nav_contacts, bundleContacts);

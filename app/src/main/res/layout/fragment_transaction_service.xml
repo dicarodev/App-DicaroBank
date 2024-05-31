@@ -65,9 +65,8 @@
         android:hint="@string/transactionService_iban"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
     <EditText
@@ -78,9 +77,8 @@
         android:hint="@string/transactionService_name"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/destinyAccountNumber_et"
+        app:layout_constraintStart_toStartOf="@+id/destinyAccountNumber_et"
         app:layout_constraintTop_toBottomOf="@+id/destinyAccountNumber_et" />
 
     <EditText
@@ -91,9 +89,8 @@
         android:hint="@string/transactionService_surname"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/destinyUserName_et"
+        app:layout_constraintStart_toStartOf="@+id/destinyUserName_et"
         app:layout_constraintTop_toBottomOf="@+id/destinyUserName_et" />
 
     <EditText
@@ -104,9 +101,8 @@
         android:hint="@string/transactionService_detail"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/destinyUserSurname_et"
+        app:layout_constraintStart_toStartOf="@+id/destinyUserSurname_et"
         app:layout_constraintTop_toBottomOf="@+id/destinyUserSurname_et" />
 
     <EditText
@@ -118,9 +114,8 @@
         android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transactionDetail_et"
+        app:layout_constraintStart_toStartOf="@+id/transactionDetail_et"
         app:layout_constraintTop_toBottomOf="@+id/transactionDetail_et" />
 
     <Button

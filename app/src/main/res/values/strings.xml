@@ -28,7 +28,7 @@
 
     <!--Logout Dialog-->
     <string name="tittle_logout_dialog">¿Ya te vas?</string>
-    <string name="tv_logout_dialog">Se va a cerrar la sesión. ¿Deseas continuar?</string>
+    <string name="tv_logout_dialog">Se va a cerrar la sesión. ¿Desea continuar?</string>
 
     <!--SingUp-->
     <string name="arrow_to_go_back">Arrow to go back</string>
@@ -49,11 +49,12 @@
     <!--Fragment Global Position-->
     <string name="account_number">Número de cuenta:</string>
     <string name="account_balance">Balance:</string>
-    <string name="account_transtactionsHistory">Historial de transferencias</string>
+    <string name="account_transtactionsHistory">Historial de movimientos</string>
 
     <!--Fragment Transaction Details-->
+    <string name="transactionDetail_info_tv">Detalle de transferencia</string>
     <string name="transactionDetail_date">Fecha transferencia: %s</string>
-    <string name="transactionDetail_amount">%s €</string>
+    <string name="transactionDetail_amount">Cantidad: %s €</string>
     <string name="transactionDetail_detail">Detalle: %s</string>
     <string name="transactionDetail_originAccount">Cuenta de origen: %s</string>
     <string name="transactionDetail_destinyAccount">Cuenta de destino: %s</string>
@@ -72,6 +73,8 @@
     <string name="tv_issueTrans_dialog">Se va a realizar un transferencia de %s €, ¿esta seguro?</string>
 
     <!--Fragment BizumService-->
+    <string name="bizumService_min_max_tv">Min. 0.5 € - Max. 300 €</string>
+    <string name="bizumService_incorrect_amount">Cantidad incorrecta</string>
     <string name="bizumService_optional_message">Mensaje (opcional)</string>
     <string name="bizumService_select_contact">Buscar contacto</string>
 
@@ -80,8 +83,10 @@
     <string name="contacts_contactIcon_img">Icono de contacto</string>
 
     <!--Fragment BizumDetails-->
-    <string name="bizumDetails_amount">%s €</string>
+    <string name="bizumDetails_info_tv">Se va a realizar en siguiente bizum</string>
+    <string name="bizumDetails_amount">Cantidad: %s €</string>
     <string name="bizumDetails_message">Detalle: %s</string>
+    <string name="bizumDetails_noMessage">Detalle: no hay mensaje</string>
     <string name="bizumDetails_send">Enviar</string>
-    <string name="bizumDetails_contact">Contacto</string>
+    <string name="bizumDetails_contact">Contacto: %s</string>
 </resources>

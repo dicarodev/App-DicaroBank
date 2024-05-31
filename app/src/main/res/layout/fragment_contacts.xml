@@ -22,7 +22,7 @@
         android:id="@+id/selectContact_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="@string/contacts_select_contact_tv"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -36,10 +36,10 @@
         android:layout_width="345dp"
         android:layout_height="418dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/selectContact_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/selectContact_tv"
         app:layout_constraintTop_toBottomOf="@+id/selectContact_tv"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.098" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

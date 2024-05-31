@@ -11,11 +11,10 @@
         android:id="@+id/logoBizumFrag_img"
         android:layout_width="116dp"
         android:layout_height="123dp"
-        android:layout_marginTop="32dp"
         android:contentDescription="@string/logo_dicaro_bank"
         android:src="@drawable/logo_dicaro_bank"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +22,7 @@
         android:id="@+id/bizumAmount_et"
         android:layout_width="350dp"
         android:layout_height="48dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="52dp"
         android:hint="@string/amount"
         android:inputType="numberDecimal"
         android:textColor="@color/white"
@@ -33,17 +32,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoBizumFrag_img" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bizumService_min_max_tv"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/bizumAmount_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bizumAmount_et"
+        app:layout_constraintTop_toBottomOf="@+id/bizumAmount_et" />
+
     <EditText
         android:id="@+id/bizumMessage_et"
         android:layout_width="350dp"
         android:layout_height="120dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="56dp"
         android:hint="@string/bizumService_optional_message"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bizumAmount_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bizumAmount_et"
         app:layout_constraintTop_toBottomOf="@+id/bizumAmount_et" />
 
     <Button
