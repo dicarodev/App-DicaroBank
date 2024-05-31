@@ -1,26 +1,23 @@
 package com.dicarodev.dicarobank.view;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.dicarodev.dicarobank.R;
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
 
+import com.dicarodev.dicarobank.R;
 import com.dicarodev.dicarobank.databinding.ActivityMainBinding;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +47,20 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
+            int id = menuItem.getItemId();
+
+            if (id == R.id.nav_logout) {
+                logout();
+                return true;
+            }
+            // Manejar otros ítems del menú aquí
+            NavigationUI.onNavDestinationSelected(menuItem, navController);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
+        });
+
+
     }
 
     /*@Override
@@ -62,9 +73,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-
         setUserConected();
-
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
@@ -75,5 +84,10 @@ public class MainActivity extends AppCompatActivity {
         Bundle mainIntentExtras = getIntent().getExtras();
         String userName = mainIntentExtras.getString("userName");
         headerUserName.setText(getString(R.string.nav_header_title, userName));
+    }
+
+    private void logout() {
+        ConfirmLogoutDialog confirmLogoutDialog = new ConfirmLogoutDialog();
+        confirmLogoutDialog.show(getSupportFragmentManager(), "confirmLogoutDialog");
     }
 }

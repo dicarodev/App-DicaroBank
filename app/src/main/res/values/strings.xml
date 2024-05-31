@@ -6,6 +6,8 @@
     <string name="nav_header_title">Hola %s</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="dialog_positive_button">Aceptar</string>
+    <string name="dialog_negative_button">Cancelar</string>
 
     <!--Drawer nav menu-->
     <string name="menu_globalPosition">Posición global</string>
@@ -14,6 +16,7 @@
     <string name="menu_bizum_service">Bizum</string>
     <string name="fragment_contacts">Contactos</string>
     <string name="fragment_bizum_details">Realizar bizum</string>
+    <string name="menu_logout">Desconectar</string>
 
     <!--LogIn-->
     <string name="et_dni_login">Usuario - DNI</string>
@@ -22,6 +25,10 @@
     <string name="txv_no_client">¿Aún no eres cliente?</string>
     <string name="link_singUp">Registrate</string>
     <string name="logo_dicaro_bank">Logo Dicaro Bank</string>
+
+    <!--Logout Dialog-->
+    <string name="tittle_logout_dialog">¿Ya te vas?</string>
+    <string name="tv_logout_dialog">Se va a cerrar la sesión. ¿Deseas continuar?</string>
 
     <!--SingUp-->
     <string name="arrow_to_go_back">Arrow to go back</string>
@@ -61,6 +68,8 @@
     <string name="transactionService_detail">Detalle transferencia</string>
     <string name="amount">Cantidad</string>
     <string name="transactionService_issue">Emitir transferencia</string>
+    <string name="tittle_issueTrans_dialog">Transferencia</string>
+    <string name="tv_issueTrans_dialog">Se va a realizar un transferencia de %s €, ¿esta seguro?</string>
 
     <!--Fragment BizumService-->
     <string name="bizumService_optional_message">Mensaje (opcional)</string>

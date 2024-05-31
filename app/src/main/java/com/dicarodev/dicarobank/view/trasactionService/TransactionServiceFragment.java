@@ -36,6 +36,7 @@ import retrofit2.Response;
 public class TransactionServiceFragment extends Fragment {
 
     private FragmentTransactionServiceBinding binding;
+    private String token;
     private AccountUserDto userAccountDto;
     private TextView tvOriginAccountNumber, tvAvailableBalance;
     private EditText etDestinyAccountNumber, etDestinyUserName, etDestinyUserSurname, etDestinyTransactionDetail, etDestinyTransactionAmount;
@@ -63,7 +64,7 @@ public class TransactionServiceFragment extends Fragment {
 
         clearFields();
 
-        String token = "Bearer " + getToken();
+        token = "Bearer " + getToken();
 
         getUserAccountRequest(token);
 

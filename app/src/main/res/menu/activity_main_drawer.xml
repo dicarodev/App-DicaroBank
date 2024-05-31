@@ -14,4 +14,11 @@
             android:id="@+id/nav_bizumService"
             android:title="@string/menu_bizum_service" />
     </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/menu_logout"/>
+    </group>
+
 </menu>

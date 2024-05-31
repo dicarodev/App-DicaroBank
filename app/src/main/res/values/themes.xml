@@ -24,4 +24,8 @@
     <style name="Theme.DicaroBank.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.DicaroBank.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@drawable/custom_dialog</item>
+    </style>
 </resources>
