@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singup_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_700"
+    tools:context=".view.SingupActivity">
+
+    <ImageButton
+        android:id="@+id/arrowBack_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/arrow_to_go_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left_38" />
+
+    <ImageView
+        android:id="@+id/logoLogin_img"
+        android:layout_width="143dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/logo_dicaro_bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_dicaro_bank" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/blue_200"
+        android:padding="15dp"
+        android:text="@string/txv_singupText"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin_img" />
+
+    <EditText
+        android:id="@+id/userDniSingup_et"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/et_dni_singUp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/userName_et"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/et_name_singUp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/userDniSingup_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userDniSingup_et"
+        app:layout_constraintTop_toBottomOf="@+id/userDniSingup_et" />
+
+    <EditText
+        android:id="@+id/userSurname_et"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/et_surname_singUp"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/userName_et"
+        app:layout_constraintStart_toStartOf="@+id/userName_et"
+        app:layout_constraintTop_toBottomOf="@+id/userName_et" />
+
+    <EditText
+        android:id="@+id/userPhone_et"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/et_phone_singUp"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/userSurname_et"
+        app:layout_constraintStart_toStartOf="@+id/userSurname_et"
+        app:layout_constraintTop_toBottomOf="@+id/userSurname_et" />
+
+    <EditText
+        android:id="@+id/userEmail_et"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/et_email_singUp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/userPhone_et"
+        app:layout_constraintStart_toStartOf="@+id/userPhone_et"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone_et" />
+
+    <EditText
+        android:id="@+id/userPassword_et"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/et_password_singUp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/userEmail_et"
+        app:layout_constraintStart_toStartOf="@+id/userEmail_et"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail_et" />
+
+    <Button
+        android:id="@+id/singup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue_200"
+        android:text="@string/btn_singUp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword_et" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

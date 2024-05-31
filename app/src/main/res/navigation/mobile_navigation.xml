@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_globalPosition">
+
+    <fragment
+        android:id="@+id/nav_globalPosition"
+        android:name="com.dicarodev.dicarobank.view.globalPosition.GlobalPositionFragment"
+        android:label="@string/menu_globalPosition"
+        tools:layout="@layout/fragment_global_position" />
+
+    <fragment
+        android:id="@+id/nav_transactionDetails"
+        android:name="com.dicarodev.dicarobank.view.globalPosition.TransactionDetailsFragment"
+        android:label="@string/fragment_transaction"
+        tools:layout="@layout/fragment_transaction_details" />
+
+    <fragment
+        android:id="@+id/nav_transactionService"
+        android:name="com.dicarodev.dicarobank.view.trasactionService.TransactionServiceFragment"
+        android:label="@string/menu_transaction_service"
+        tools:layout="@layout/fragment_transaction_service" />
+
+    <fragment
+        android:id="@+id/nav_bizumService"
+        android:name="com.dicarodev.dicarobank.view.bizumService.BizumServiceFragment"
+        android:label="@string/menu_bizum_service"
+        tools:layout="@layout/fragment_bizum_service" />
+
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="com.dicarodev.dicarobank.view.bizumService.ContactsFragment"
+        android:label="@string/fragment_contacts"
+        tools:layout="@layout/fragment_transaction_service" />
+
+    <fragment
+        android:id="@+id/nav_bizumDetails"
+        android:name="com.dicarodev.dicarobank.view.bizumService.BizumDetailsFragment"
+        android:label="@string/fragment_bizum_details"
+        tools:layout="@layout/fragment_bizum_details" />
+
+</navigation>

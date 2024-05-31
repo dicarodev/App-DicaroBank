@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">DicaroBank</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hola %s</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Drawer nav menu-->
+    <string name="menu_globalPosition">Posición global</string>
+    <string name="fragment_transaction">Detalle transferencia</string>
+    <string name="menu_transaction_service">Realizar transferencia</string>
+    <string name="menu_bizum_service">Bizum</string>
+    <string name="fragment_contacts">Contactos</string>
+    <string name="fragment_bizum_details">Realizar bizum</string>
+
+    <!--LogIn-->
+    <string name="et_dni_login">Usuario - DNI</string>
+    <string name="et_password_login">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="txv_no_client">¿Aún no eres cliente?</string>
+    <string name="link_singUp">Registrate</string>
+    <string name="logo_dicaro_bank">Logo Dicaro Bank</string>
+
+    <!--SingUp-->
+    <string name="arrow_to_go_back">Arrow to go back</string>
+    <string name="txv_singupText">Registrate ahora y accede a todos los beneficios de la mejor banca online.</string>
+    <string name="et_dni_singUp">Dni</string>
+    <string name="et_name_singUp">Nombre</string>
+    <string name="et_surname_singUp">Apellidos</string>
+    <string name="et_phone_singUp">Teléfono</string>
+    <string name="et_email_singUp">Email</string>
+    <string name="et_password_singUp">Contraseña</string>
+    <string name="btn_singUp">Registrar</string>
+    <string name="required_field">Campo obligatorio.</string>
+    <string name="dni_pattern">Formato incorrecto (Ej. 00000000A).</string>
+    <string name="dni_no_valid">DNI incorrecto.</string>
+    <string name="phone_pattern">El número de teléfono debe tener 9 dígitos.</string>
+
+
+    <!--Fragment Global Position-->
+    <string name="account_number">Número de cuenta:</string>
+    <string name="account_balance">Balance:</string>
+    <string name="account_transtactionsHistory">Historial de transferencias</string>
+
+    <!--Fragment Transaction Details-->
+    <string name="transactionDetail_date">Fecha transferencia: %s</string>
+    <string name="transactionDetail_amount">%s €</string>
+    <string name="transactionDetail_detail">Detalle: %s</string>
+    <string name="transactionDetail_originAccount">Cuenta de origen: %s</string>
+    <string name="transactionDetail_destinyAccount">Cuenta de destino: %s</string>
+
+    <!--Fragment TransactionService - Issue Transaction-->
+    <string name="transactionService_origin_account_number">Origen: %s</string>
+    <string name="transactionService_origin_account_balance">%s €</string>
+    <string name="transactionService_available">Disponible</string>
+    <string name="transactionService_iban">IBAN</string>
+    <string name="transactionService_name">Nombre</string>
+    <string name="transactionService_surname">Apellidos</string>
+    <string name="transactionService_detail">Detalle transferencia</string>
+    <string name="amount">Cantidad</string>
+    <string name="transactionService_issue">Emitir transferencia</string>
+
+    <!--Fragment BizumService-->
+    <string name="bizumService_optional_message">Mensaje (opcional)</string>
+    <string name="bizumService_select_contact">Buscar contacto</string>
+
+    <!--Fragment Contacts-->
+    <string name="contacts_select_contact_tv">Seleccione un contacto</string>
+    <string name="contacts_contactIcon_img">Icono de contacto</string>
+
+    <!--Fragment BizumDetails-->
+    <string name="bizumDetails_amount">%s €</string>
+    <string name="bizumDetails_message">Detalle: %s</string>
+    <string name="bizumDetails_send">Enviar</string>
+    <string name="bizumDetails_contact">Contacto</string>
+</resources>

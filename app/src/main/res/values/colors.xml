@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="link">#172BE3</color>
+
+    <color name="blue_200">#CAE8D5</color>
+    <color name="blue_300">#84A9AC</color>
+    <color name="blue_500">#3B6978</color>
+    <color name="blue_700">#204051</color>
+    <color name="toolbar">#4f7989</color>
+
+    <color name="mid_brown">#EBD9B4</color>
+    <color name="light_brown">#F9EFDB</color>
+    <color name="mid_green">#63897C</color>
+    <color name="light_green">#7B9E8C</color>
+</resources>
