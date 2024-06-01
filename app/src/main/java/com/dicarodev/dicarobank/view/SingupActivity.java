@@ -93,8 +93,10 @@ public class SingupActivity extends AppCompatActivity {
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if (response.isSuccessful()) {
 
-                    try {
-                        Toast.makeText(getApplicationContext(), "Le damos la bienvenida a Dicaro Bank.", Toast.LENGTH_LONG).show();
+                    WelcomeDialog welcomeDialog = new WelcomeDialog();
+                    welcomeDialog.show(getSupportFragmentManager(), "confirmLogoutDialog");
+                    /*try {
+                        Toast.makeText(getApplicationContext(), "Le damos la bienvenida a Dicaro Bank", Toast.LENGTH_LONG).show();
 
                         sleep(3000);
 
@@ -103,7 +105,7 @@ public class SingupActivity extends AppCompatActivity {
                         finish();
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
-                    }
+                    }*/
 
                 } else {
 
