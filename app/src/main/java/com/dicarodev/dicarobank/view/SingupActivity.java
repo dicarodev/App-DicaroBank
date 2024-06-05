@@ -110,6 +110,7 @@ public class SingupActivity extends AppCompatActivity {
                 } else {
 
                     try {
+                        assert response.errorBody() != null;
                         JSONObject errorBody = new JSONObject(response.errorBody().string()); // Extraer el cuerpo de la respuesta como un JSON
                         String errorMessage = errorBody.getString("message");
                         Toast.makeText(getApplicationContext(), errorMessage, Toast.LENGTH_LONG).show();
@@ -163,6 +164,7 @@ public class SingupActivity extends AppCompatActivity {
     private boolean validateUser(String userDni, String userName, String userSurname, String userPhone, String userEmail, String userPassword) {
         boolean isValid = true;
         String regexPhone = "(^\\d{9})";
+        String regexEmail = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
 
         if (!validateUserDni(userDni)) {
             isValid = false;
@@ -189,6 +191,10 @@ public class SingupActivity extends AppCompatActivity {
 
         if (userEmail.isEmpty()) {
             etUserEmail.setError(getString(R.string.required_field));
+            isValid = false;
+        } else if (!userEmail.matches(regexEmail)) {
+            etUserEmail.setText("");
+            etUserEmail.setError("Email no valido (Ej. example@example.com)");
             isValid = false;
         }
 

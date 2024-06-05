@@ -44,6 +44,7 @@
     <string name="dni_pattern">Formato incorrecto (Ej. 00000000A).</string>
     <string name="dni_no_valid">DNI incorrecto.</string>
     <string name="phone_pattern">El número de teléfono debe tener 9 dígitos.</string>
+    <string name="email_pattern">Email no valido (Ej. example@example.com).</string>
     <string name="tittle_welcome_dialog">Dicaro Bank</string>
     <string name="tv_welcome_dialog">Le damos la bienvenida a Dicaro Bank. Puede acercarse a su cajero más cercano para realizar su primer deposito.</string>
 
