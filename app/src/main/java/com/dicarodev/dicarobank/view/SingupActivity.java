@@ -194,7 +194,7 @@ public class SingupActivity extends AppCompatActivity {
             isValid = false;
         } else if (!userEmail.matches(regexEmail)) {
             etUserEmail.setText("");
-            etUserEmail.setError("Email no valido (Ej. example@example.com)");
+            etUserEmail.setError(getString(R.string.email_pattern));
             isValid = false;
         }
 
