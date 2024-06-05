@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DicaroBank</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hello %s</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialog_positive_button">Accept</string>
+    <string name="dialog_negative_button">Cancel</string>
+
+    <!--Drawer nav menu-->
+    <string name="menu_globalPosition">Global Position</string>
+    <string name="fragment_transaction">Transaction Details</string>
+    <string name="menu_transaction_service">Make Transfer</string>
+    <string name="menu_bizum_service">Bizum</string>
+    <string name="fragment_contacts">Contacts</string>
+    <string name="fragment_bizum_details">Make Bizum</string>
+    <string name="menu_logout">Logout</string>
+
+    <!--LogIn-->
+    <string name="et_dni_login">User - DNI</string>
+    <string name="et_password_login">Password</string>
+    <string name="login">Log In</string>
+    <string name="txv_no_client">Not a client yet?</string>
+    <string name="link_singUp">Sign Up</string>
+    <string name="logo_dicaro_bank">Dicaro Bank Logo</string>
+
+    <!--Logout Dialog-->
+    <string name="tittle_logout_dialog">Leaving already?</string>
+    <string name="tv_logout_dialog">You are about to log out. Do you want to continue?</string>
+
+    <!--SignUp-->
+    <string name="arrow_to_go_back">Arrow to go back</string>
+    <string name="txv_singupText">Sign up now and access all the benefits of the best online banking.</string>
+    <string name="et_dni_singUp">DNI</string>
+    <string name="et_name_singUp">First Name</string>
+    <string name="et_surname_singUp">Last Name</string>
+    <string name="et_phone_singUp">Phone</string>
+    <string name="et_email_singUp">Email</string>
+    <string name="et_password_singUp">Password</string>
+    <string name="btn_singUp">Register</string>
+    <string name="required_field">Required field.</string>
+    <string name="dni_pattern">Incorrect format (e.g. 00000000A).</string>
+    <string name="dni_no_valid">Invalid DNI.</string>
+    <string name="phone_pattern">Phone number must have 9 digits.</string>
+    <string name="email_pattern">Invalid email (e.g. example@example.com).</string>
+    <string name="tittle_welcome_dialog">Dicaro Bank</string>
+    <string name="tv_welcome_dialog">Welcome to Dicaro Bank. You can visit your nearest ATM to make your first deposit.</string>
+
+    <!--Fragment Global Position-->
+    <string name="account_number">Account number:</string>
+    <string name="account_balance">Balance:</string>
+    <string name="account_transtactionsHistory">Transaction history</string>
+
+    <!--Fragment Transaction Details-->
+    <string name="transactionDetail_info_tv">Transfer details</string>
+    <string name="transactionDetail_date">Transfer date: %s</string>
+    <string name="transactionDetail_amount">Amount: %s €</string>
+    <string name="transactionDetail_detail">Details: %s</string>
+    <string name="transactionDetail_originAccount">Origin account: %s</string>
+    <string name="transactionDetail_destinyAccount">Destination account: %s</string>
+
+    <!--Fragment TransactionService - Issue Transaction-->
+    <string name="transactionService_origin_account_number">Origin: %s</string>
+    <string name="transactionService_origin_account_balance">%s €</string>
+    <string name="transactionService_available">Available</string>
+    <string name="transactionService_iban">IBAN</string>
+    <string name="transactionService_name">First Name</string>
+    <string name="transactionService_surname">Last Name</string>
+    <string name="transactionService_detail">Transfer details</string>
+    <string name="amount">Amount</string>
+    <string name="transactionService_issue">Issue transfer</string>
+    <string name="tittle_issueTrans_dialog">Transfer</string>
+    <string name="tv_issueTrans_dialog">A transfer of %s € is about to be made, are you sure?</string>
+
+    <!--Fragment BizumService-->
+    <string name="bizumService_min_max_tv">Min. 0.5 € - Max. 300 €</string>
+    <string name="bizumService_incorrect_amount">Incorrect amount</string>
+    <string name="bizumService_optional_message">Message (optional)</string>
+    <string name="bizumService_select_contact">Find contact</string>
+
+    <!--Fragment Contacts-->
+    <string name="contacts_select_contact_tv">Select a contact</string>
+    <string name="contacts_contactIcon_img">Contact icon</string>
+
+    <!--Fragment BizumDetails-->
+    <string name="bizumDetails_info_tv">The following Bizum will be made</string>
+    <string name="bizumDetails_amount">Amount: %s €</string>
+    <string name="bizumDetails_message">Details: %s</string>
+    <string name="bizumDetails_noMessage">Details: no message</string>
+    <string name="bizumDetails_send">Send</string>
+    <string name="bizumDetails_contact">Contact: %s</string>
+</resources>
